@@ -3,6 +3,7 @@ body {
     margin: 0%;
 }
 
+
 @media screen and (max-width: 500px){
     #dator {
         display: none;
@@ -11,6 +12,7 @@ body {
     grid-template-areas: 
       "hd hd"
       "sb sb"
+      "shdr shdr"
       "b1 t1"
       "b2 t1"
       "b3 t2"
@@ -18,8 +20,8 @@ body {
       "ft ft"
     ;
     display: grid;
-    grid-template-rows: 70px auto auto auto auto auto auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px auto auto 8rem 8rem 8rem 8rem 70px;
+    grid-template-columns: 0.5fr 1fr;
     }
     #hd {
         font-size: 50px;
@@ -30,14 +32,25 @@ body {
         align-content: center;
 
 }
+    #secondhdr {
+        background-color: red;
+        margin-top: 0%;
+        text-align: center;
+        grid-area: shdr;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-bottom: 0%;
+    }
     #mobil {
+        margin-bottom: 0%;
         grid-area: sb;
 
     }
     #mobil img {
-        width: 500px;
+        width: 100%;
         height: auto; 
+        margin-bottom: 0%;
     }
+
     #text1 {
         grid-area: t1; 
         background-color: aqua;
@@ -65,6 +78,15 @@ body {
     #ft {
         grid-area: ft;
     }
+        h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        align-items: center;
+    }
+
+}
+p {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 @media screen and (min-width:501px) {
     #mobil {display: none;}
