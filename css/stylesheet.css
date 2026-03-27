@@ -105,7 +105,8 @@ body#p2 {
     height: 100%;
     width: 100%;
     position: absolute;
-    background: linear-gradient(0deg, #ee8695 0.00001%, transparent, #ee8695 99.9999%);
+    background: linear-gradient(0deg, #ee8695 1%, transparent, #ee8695 99%);
+    opacity: 0.6;
 }
 
 #schedule2 {
